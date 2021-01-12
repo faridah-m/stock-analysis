@@ -1,6 +1,6 @@
 # stock-analysis
-Overview of the Project # Heading 1 #
-    Project Background # Heading 2 #
+# Overview of the Project 
+## Project Background
         This project begun in an effort to understand how actively the stock DQ was traded. We then proceeded to do a greater analysis of the yearly return of all stock tickers across the 2017 and 2018. 
 
     Project Purpose
