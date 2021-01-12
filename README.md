@@ -156,6 +156,47 @@ Full Refactored Code Below:
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
     End Sub
+    
+# Summary
+
+In the refactored analysis above, we implemented Arrays rather than using nested loops as in previous examples. Code refactoring allows us to restructure and optimize code for better performance. Refactoring code in general has various advantages and disadvantages as shown below:
+
+## Advantages of Code Refactoring
+* Improve code performance i.e. reduce time taken to run the script 
+* Maintainability
+* Ensuring code is easier to understand
+
+## Disadvantages of Code Refactoring
+* It expensive, takes time to go through the code and refactor it
+* It may introduce bugs
+
+In relation to this specific example, we have found the following results:
+
+## Advantages of Refactored VBA Script
+* The refactored VBA Script performed faster than the original VBA Script, see screen shots below:
+
+### 2017 Performance
+
+    2017 Performance: Original Script
+    ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Performance.PNG)
+    
+    2017 Peformance: Refactored Script
+    ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Refactored_Performance.PNG)
+
+### 2018 Performance
+
+       2018 Performance: Original Script
+        ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Performance.PNG)
+       
+       2018 Performance: Original Script
+        ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Refactored_Performance.PNG)
+        
+ * The refactored script flowed better and was easier to understand than the original script
+    
+
+## Disadvantages of Refactored VBA Script
+* Code refactoring took longer than it took to write the original script
+
 
 
         
