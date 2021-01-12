@@ -196,11 +196,3 @@ In relation to this specific example, we have found the following results:
 
 ## Disadvantages of Refactored VBA Script
 * Code refactoring took longer than it took to write the original script
-
-
-
-        
-
-
-
-Summary
