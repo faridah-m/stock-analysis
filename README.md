@@ -20,68 +20,68 @@ The results across the 2017 and 2018 are as follows:
 
 Full Refactored Code Below:
 
-Sub AllStocksAnalysisRefactoredA()
-    Dim startTime As Single
-    Dim endTime  As Single
+    Sub AllStocksAnalysisRefactoredA()
+        Dim startTime As Single
+        Dim endTime  As Single
 
-    yearValue = InputBox("What year would you like to run the analysis on?")
+        yearValue = InputBox("What year would you like to run the analysis on?")
 
-    startTime = Timer
+        startTime = Timer
     
-    'Format the output sheet on All Stocks Analysis worksheet
-    Worksheets("All Stocks Analysis").Activate
+        'Format the output sheet on All Stocks Analysis worksheet
+        Worksheets("All Stocks Analysis").Activate
     
-    Range("A1").Value = "All Stocks (" + yearValue + ")"
+        Range("A1").Value = "All Stocks (" + yearValue + ")"
     
-    'Create a header row
-    Cells(3, 1).Value = "Ticker"
-    Cells(3, 2).Value = "Total Daily Volume"
-    Cells(3, 3).Value = "Return"
+        'Create a header row
+        Cells(3, 1).Value = "Ticker"
+        Cells(3, 2).Value = "Total Daily Volume"
+        Cells(3, 3).Value = "Return"
 
-    'Initialize array of all tickers
-    Dim tickers(12) As String
+        'Initialize array of all tickers
+        Dim tickers(12) As String
     
-    tickers(0) = "AY"
-    tickers(1) = "CSIQ"
-    tickers(2) = "DQ"
-    tickers(3) = "ENPH"
-    tickers(4) = "FSLR"
-    tickers(5) = "HASI"
-    tickers(6) = "JKS"
-    tickers(7) = "RUN"
-    tickers(8) = "SEDG"
-    tickers(9) = "SPWR"
-    tickers(10) = "TERP"
-    tickers(11) = "VSLR"
+         tickers(0) = "AY"
+         tickers(1) = "CSIQ"
+         tickers(2) = "DQ"
+         tickers(3) = "ENPH"
+         tickers(4) = "FSLR"
+         tickers(5) = "HASI"
+         tickers(6) = "JKS"
+         tickers(7) = "RUN"
+         tickers(8) = "SEDG"
+         tickers(9) = "SPWR"
+         tickers(10) = "TERP"
+         tickers(11) = "VSLR"
     
-    'Activate data worksheet
-    Worksheets(yearValue).Activate
+       'Activate data worksheet
+       Worksheets(yearValue).Activate
     
-    'Get the number of rows to loop over
-    RowCount = Cells(Rows.Count, "A").End(xlUp).Row
+        'Get the number of rows to loop over
+        RowCount = Cells(Rows.Count, "A").End(xlUp).Row
     
-    '1a) Create a ticker Index
+        '1a) Create a ticker Index
         
-    Dim tickerIndex As Single
-    tickerIndex = 0
+       Dim tickerIndex As Single
+       tickerIndex = 0
          
 
-    '1b) Create three output arrays
-    Dim tickerstartingPrices(12) As Single
-    Dim tickerendingPrices(12) As Single
-    Dim tickerVolumes(12) As Long
+      '1b) Create three output arrays
+       Dim tickerstartingPrices(12) As Single
+       Dim tickerendingPrices(12) As Single
+       Dim tickerVolumes(12) As Long
 
-    ''2a) Create a for loop to initialize the tickerVolumes to zero.
-    For j = 0 To 11
+      ''2a) Create a for loop to initialize the tickerVolumes to zero.
+      For j = 0 To 11
          'tickerIndex = tickers(j)
           tickerVolumes(j) = 0
        Next j
              
-    '2b) Loop over all the rows in the spreadsheet.
-    Worksheets(yearValue).Activate
-    For i = 2 To RowCount
+      '2b) Loop over all the rows in the spreadsheet.
+          Worksheets(yearValue).Activate
+          For i = 2 To RowCount
     
-        '3a) Increase volume for current ticker
+      '3a) Increase volume for current ticker
         For tickerIndex = 0 To 11
         If Cells(i, 1).Value = tickers(tickerIndex) Then
                tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, 8).Value
@@ -89,7 +89,7 @@ Sub AllStocksAnalysisRefactoredA()
         End If
         Next tickerIndex
         
-        '3b) Check if the current row is the first row with the selected tickerIndex.
+      '3b) Check if the current row is the first row with the selected tickerIndex.
         'If  Then
            For tickerIndex = 0 To 11
             If Cells(i - 1, 1).Value <> tickers(tickerIndex) And Cells(i, 1).Value = tickers(tickerIndex) Then
@@ -114,7 +114,7 @@ Sub AllStocksAnalysisRefactoredA()
         'End If
          End If
          Next tickerIndex
-    Next i
+      Next i
     
     '4) Loop through your arrays to output the Ticker, Total Daily Volume, and Return.
     
@@ -155,7 +155,7 @@ Sub AllStocksAnalysisRefactoredA()
     endTime = Timer
     MsgBox "This code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)
 
-End Sub
+    End Sub
 
 
         
