@@ -5,13 +5,16 @@
 ## Project Purpose
 * The purpose of this project is to measure the Return across all 12 tickers in the Years 2017 and 2018. The yearly return is the percentage increase or decrease in price from the beginning of the year to the end of the year.
     
-        In addition, the project also measures performance via a timer that displays how long it took each query, per year, to run.
+* In addition, the project also measures performance via a timer that displays how long it took each query, per year, to run.
    
-Results
+# Results
 
 The results across the 2017 and 2018 are as follows:
+## 2017 Results:
+![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Refactored_Results.PNG)
 
-    2017 Results:
+## 2018 Results:
+
 
         
 
