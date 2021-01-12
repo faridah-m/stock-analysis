@@ -178,18 +178,18 @@ In relation to this specific example, we have found the following results:
 ### 2017 Performance
 
     2017 Performance: Original Script
-    ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Performance.PNG)
+![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Performance.PNG)
     
     2017 Peformance: Refactored Script
-    ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Refactored_Performance.PNG)
+![Image](https://github.com/faridah-m/stock-analysis/blob/main/2017_Refactored_Performance.PNG)
 
 ### 2018 Performance
 
        2018 Performance: Original Script
-        ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Performance.PNG)
+![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Performance.PNG)
        
        2018 Performance: Original Script
-        ![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Refactored_Performance.PNG)
+![Image](https://github.com/faridah-m/stock-analysis/blob/main/2018_Refactored_Performance.PNG)
         
  * The refactored script flowed better and was easier to understand than the original script
     
